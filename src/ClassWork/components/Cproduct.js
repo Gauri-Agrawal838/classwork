@@ -8,7 +8,7 @@ function Cproduct() {
     </div>
     <nav>
       <NavLink to = 'shirt'>Shirts</NavLink>
-      <NavLink to = 'jeans'>Jeans</NavLink>
+      <NavLink to = '/product/jeans'>Jeans</NavLink>
     </nav>
     <Outlet/>
     </>

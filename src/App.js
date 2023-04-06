@@ -15,8 +15,12 @@ import Pagenotfound from './ClassWork/components/Pagenotfound';
 import Cproduct from './ClassWork/components/Cproduct';
 import Cshirts from './ClassWork/components/Cshirts';
 import Cjeans from './ClassWork/components/Cjeans';
+import Cusers from './ClassWork/components/Cusers';
+import CuserDetail from './ClassWork/components/CuserDetail';
+import Cadmin from './ClassWork/components/Cadmin';
 
 import "./index.css";
+import CuserDetali from './ClassWork/components/CuserDetail';
 
 // let name = "Gauri";
 
@@ -36,8 +40,18 @@ function App() {
         <Route path='shirt' element={<Cshirts/>}></Route>
         <Route path='jeans' element={<Cjeans/>}></Route>
       </Route>
+      <Route path='/user' element={<Cusers/>}>
+        <Route path=':id' element={<CuserDetail/>}></Route>
+      </Route>
+      <Route path='/user/:id' element={<CuserDetail/>}></Route>
+
+      {/* <Route path='/user/1' element={<CuserDetail/>}></Route>
+      <Route path='/user/2' element={<CuserDetail/>}></Route>
+      <Route path='/user/3' element={<CuserDetail/>}></Route> */}
+      <Route path='/user/admin' element={<Cadmin/>}></Route>
       <Route path = '*' element={<Pagenotfound/>}></Route>
     </Routes>
+
     {/* <button onClick={() => navigate('./')}>Click Home</button>
     <button onClick={() => navigate('./about')}>Click About</button>
     <button onClick={() => navigate('./service')}>Click Service</button>

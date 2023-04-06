@@ -12,10 +12,10 @@ function Cnavbar() {
   return (
     <nav>
       <NavLink to = '/' style={NavLinkCss}>Home </NavLink>
-      <NavLink to = '/about' style={NavLinkCss}>About </NavLink>
-      <NavLink to = '/service' style={NavLinkCss}>Service </NavLink>
-      <NavLink to = '/contact' style={NavLinkCss}>Contact </NavLink>
       <NavLink to = '/product' style={NavLinkCss}>Product </NavLink>
+      <NavLink to = '/service' style={NavLinkCss}>Service </NavLink>
+      <NavLink to = '/about' style={NavLinkCss}>About </NavLink>
+      <NavLink to = '/contact' style={NavLinkCss}>Contact </NavLink>
     </nav>
   )
 }
