@@ -1,17 +1,61 @@
+import {BrowserRouter} from 'react-router-dom';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
+
+// import Navbar from './ClassWork/components/Navbar';
+// import TextForm from './ClassWork/components/TextForm';
+// import About from './ClassWork/components/About';
+
+import Events from './ClassWork/components/Events';
+// import Header from './ClassWork/components/Header';
+// import {Header,Header2} from './ClassWork/components/Header';
+// import Sidebar from './ClassWork/components/Sidebar';
+// import Footer from './ClassWork/components/Footer';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Employee from './ClassWork/components/Employee';
+import ClassEvent from './ClassWork/components/ClassEvent';
+import PropsEventFun from './ClassWork/components/PropsEventFun';
+import PropsEventComp from './ClassWork/components/PropsEventComp';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import EventBinding from './ClassWork/components/EventBinding';
+
+const root = createRoot(document.getElementById('root'));
+let a = 'Gauri';
+const footer = createRoot(document.getElementById('footer'));
+const sidebar = createRoot(document.getElementById('sidebar'));
+root.render(
+    <div>
+    {/* <Header name = "Gauri" rollno = {32} branch = 'cse' isplaced = {true}/>
+    <Header branch = 'cse' isplaced = {false}/>
+    <Sidebar name = "GLA UNIVERSITY"/>
+    <Footer/> */}
+    {/* <Employee/> */}
+
+    {/* <Navbar title="TextUtils"/>
+    <div className='container my-3'>
+    <TextForm heading = "Enter the text to analyze"/> 
+    <About/>
+    </div>  */}
+
+    {/* <Events /> */}
+    {/* <ClassEvent/> */}
+
+    {/* <PropsEventFun name = "Anita"/>
+    <PropsEventComp/> */}
+    
+    {/* <EventBinding/> */}
+
+    {/* <App/> */}
+
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+
+    </div>
+ );  
+// footer.render(<Footer name="Gauri Agrawal" roll="32"/>);
+// sidebar.render(<Sidebar/>);
+

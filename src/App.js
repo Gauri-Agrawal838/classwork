@@ -1,24 +1,59 @@
-import logo from './logo.svg';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import './App.css';
+// import logo from './logo.svg';
+// import Navbar from './ClassWork/components/Navbar';
+// import Destruct from './ClassWork/components/Destruct';
+// import ClassDest from './ClassWork/components/ClassDest';
+// import StateDes from './ClassWork/components/StateDes';
+
+import Chome from './ClassWork/components/Chome';
+import Cabout from './ClassWork/components/Cabout';
+import Cservice from './ClassWork/components/Cservice';
+import Ccontact from './ClassWork/components/Ccontact';
+import Cnavbar from './ClassWork/components/Cnavbar';
+import Pagenotfound from './ClassWork/components/Pagenotfound';
+import Cproduct from './ClassWork/components/Cproduct';
+import Cshirts from './ClassWork/components/Cshirts';
+import Cjeans from './ClassWork/components/Cjeans';
+
+import "./index.css";
+
+// let name = "Gauri";
 
 function App() {
+  const navigate = useNavigate();
+  // let name = "Gauri";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <Cnavbar/>
+    <Routes>
+      <Route path='/' element={<Chome/>}></Route>
+      <Route path='/about' element={<Cabout/>}></Route>
+      <Route path='/service' element={<Cservice/>}></Route>
+      <Route path='/contact' element={<Ccontact/>}></Route>
+      <Route path='/product' element={<Cproduct/>}>
+        <Route index element={<Cshirts/>}></Route>
+        <Route path='shirt' element={<Cshirts/>}></Route>
+        <Route path='jeans' element={<Cjeans/>}></Route>
+      </Route>
+      <Route path = '*' element={<Pagenotfound/>}></Route>
+    </Routes>
+    {/* <button onClick={() => navigate('./')}>Click Home</button>
+    <button onClick={() => navigate('./about')}>Click About</button>
+    <button onClick={() => navigate('./service')}>Click Service</button>
+    <button onClick={() => navigate('./contact')}>Click Contact</button> */}
+
+    {/* <button className='colbut' onClick={() => NavigateToWhere()}>Click Me</button>
+    <button className='colbut' onClick={() => navigate(-1)}>Go Back</button> */}
+
     </div>
+  //  <div>
+  //  <Destruct name = 'GLA University' age = {20}/>
+  //  <ClassDest name = 'FullStack' age = {20}/>
+  //  <StateDes/>
+  
+  //   <Navbar title = "TextUtils23"/>
+  //  </div>
   );
 }
 
