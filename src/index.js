@@ -4,9 +4,6 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-// import Navbar from './ClassWork/components/Navbar';
-// import TextForm from './ClassWork/components/TextForm';
-// import About from './ClassWork/components/About';
 
 import Events from './ClassWork/components/Events';
 // import Header from './ClassWork/components/Header';
@@ -34,15 +31,10 @@ root.render(
     <Footer/> */}
     {/* <Employee/> */}
 
-    {/* <Navbar title="TextUtils"/>
-    <div className='container my-3'>
-    <TextForm heading = "Enter the text to analyze"/> 
-    <About/>
-    </div>  */}
+
 
     {/* <Events /> */}
     {/* <ClassEvent/> */}
-
     {/* <PropsEventFun name = "Anita"/>
     <PropsEventComp/> */}
     

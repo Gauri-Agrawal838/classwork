@@ -1,7 +1,7 @@
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import './App.css';
 // import logo from './logo.svg';
-// import Navbar from './ClassWork/components/Navbar';
+
 // import Destruct from './ClassWork/components/Destruct';
 // import ClassDest from './ClassWork/components/ClassDest';
 // import StateDes from './ClassWork/components/StateDes';
@@ -66,7 +66,6 @@ function App() {
   //  <ClassDest name = 'FullStack' age = {20}/>
   //  <StateDes/>
   
-  //   <Navbar title = "TextUtils23"/>
   //  </div>
   );
 }
